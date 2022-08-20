@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #2e3136;
+}
+* {
+  font-family: 'Arial', 'メイリオ';
+}
+p {
+  color: #034EFF;
+  font-weight: 900;
+  font-size: 20px;
+}
+a {
+  background: #30ff9f;
+  padding: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #ffffff;
+}
+#version {
+  background: #30ff9f;
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+}
