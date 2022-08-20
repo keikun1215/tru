@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trust - A minecraft bedrock utility mod</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <center>
+    <img style="width: 400px; height: auto;" src="logo.png"/>
+    <p>A minecraft utility mod.</p>
+    <br>
+    <select onchange="a(this)" name="version" id="version">
+      <option value="-1-18-x">1.18.x</option>
+      <option value="-1-19-x" selected="selected">1.19.x</option>
+    </select>
+    <a id="a" href="Trust.exe" download="Trust-injector-1-19-x.exe"><i class="fa-solid fa-download"></i>Download</a>
+  </center>
+  <script>
+    function a(e){
+      $("#a").attr("download", "Trust-injector" + e.options[e.selectedIndex].value + ".exe")
+    }
+  </script>
+</body>
+
+</html>
